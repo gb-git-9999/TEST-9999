@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>이벤트 리스너 속성</title>
+        <!--Javascript에서 이벤트 리스너(Event Listener)는
+        특정 이벤트가 발생했을 때 호출되는 함수를 의미합니다.
+        이벤트 리스너를 사용하면 HTML 요소가
+        특정 이벤트(예: 클릭, 마우스 이동, 키보드 입력 등)에 반응하도록 만들 수 있습니다. -->
+    </head>
+    <body>
+        <h2>마우스를 올려보세요 😋</h2>
+        <!-- 마우스를 떼었을 때, 다시 icon1.png로 변경 -->
+        <!-- 마우스를 떼는 event listener는 onmouseleave이다. -->
+        <hr />
+        <img
+            src="images/icon1.png"
+            width="250px"
+            onmouseenter="this.src = 'images/icon2.png'"
+            onmouseleave="this.src = 'images/icon1.png'"
+        />
+
+        <!-- src = 이미지 파일 경로 -->
+        <!-- width(너비)(크기) 250px 설정 -->
+
+        <!-- onmouseenter : onmouseenter는 JavaScript에서 마우스 이벤트 중 하나로, -->
+        <!-- 마우스 커서가 특정 요소 위로 처음 진입할 때 트리거됩니다. -->
+        <!-- 이 이벤트는 주로 사용자가 웹 페이지에서 특정 요소에 마우스를 올릴 때 -->
+        <!-- 어떤 동작을 실행하고 싶을 때 사용됩니다. -->
+
+        <!-- 트리거 : 총의 방아쇠를 뜻하는 사격 용어. -->
+        <!-- 어느 특정한 동작에 반응해 자동으로 필요한 동작을 실행하는 것.  -->
+
+        <!-- 언듯보기엔 비슷하지만 다른 onmouseover와의 차이점 -->
+        <!-- onmouseover는 자식 요소로 진입할 때도 부모 요소에서 이벤트가 발생하지만, -->
+        <!-- onmouseenter는 해당 요소에만 한정됩니다. -->
+
+        <!-- onmouseleave : 마우스가 특정 요소의 영역을 벗어날 때 트리거됩니다. -->
+        <!-- 자식 요소에서 발생한 onmouseleave 이벤트가 부모 요소로 전파되지 않습니다. -->
+        <!-- 언듯보기엔 비슷하지만 다른 mouseout와의 차이점-->
+        <!-- mouseout은 마우스가 자식 요소로 이동할 때도 부모 요소에서 이벤트가 발생하지만, -->
+        <!-- onmouseleave는 해당 요소를 완전히 벗어날 때만 발생합니다. -->
+
+        <!-- 자바스크립트 html문서 실행 : ALT + L + O -->
+        <!-- 이미지1에서 마우스가 이미지에 다가갈 때 이미지2로 바뀌게 되고 -->
+        <!-- 다시 마우스 커서가 이미지2에서 벗어나면 이미지1로 돌아오게 된다. -->
+    </body>
+</html>
